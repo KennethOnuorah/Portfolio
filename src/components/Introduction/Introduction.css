@@ -1,0 +1,61 @@
+.introduction{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 150px;
+}
+.introduction .aboutMe{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.introduction .aboutMe .greeting{
+  font-weight: bold;
+  font-size: xxx-large;
+  text-align: left;
+}
+
+.introduction .aboutMe .description{
+  font-size: x-large;
+}
+.introduction .aboutMe .buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.introduction .aboutMe .buttons button{
+  font-size: large;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: gold;
+  color: black;
+  padding: 1rem 2rem;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.introduction .aboutMe .buttons button:hover{
+  border-radius: 15px;
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 0px 8px 8px rgba(255, 217, 0, 0.476);
+}
+
+.introduction img{
+  user-select: none;
+  animation: levitate 4s infinite;
+  transition: all 0.2s ease;
+}
+
+@keyframes levitate{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}

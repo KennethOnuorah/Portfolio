@@ -12,19 +12,19 @@ const NavBar = () => {
         Kenneth Onuorah
       </div>
       <div className="links">
-        <button className="home">
+        <button>
           <Home/>
           Home
         </button> |
-        <button className="aboutMe">
+        <button>
           <AboutMe/>
           About Me
         </button> |
-        <button className="projects">
+        <button>
           <Projects/>
           Projects
         </button> |
-        <button className="resume">
+        <button>
           <Resume/>
           Resume
         </button>

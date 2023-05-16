@@ -1,0 +1,12 @@
+.resume {
+  margin-top: 150px;
+}
+
+.resumeContainer .title{
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.resumeContainer .title .subtitle{
+  font-size: x-large;
+}

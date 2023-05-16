@@ -1,0 +1,28 @@
+.projects{
+  margin-top: 200px;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.projectsContainer .title{
+  text-align: center;
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.projectsContainer .title .subtitle {
+  font-size: x-large;
+}
+
+.projectsContainer .projectCards {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}

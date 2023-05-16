@@ -3,7 +3,7 @@ import "./Introduction.css"
 const Introduction = () => {
   return (
     <section className='introduction'>
-      <div className="aboutMe">
+      <div className="innerContainer">
         <div className="greeting">
           Hello There! 👋
           <br/>
@@ -21,7 +21,7 @@ const Introduction = () => {
           </button>
         </div>
       </div>
-      <img src="/images/ken_illustration.png" width={540} height={420}/>
+      <img src="/images/me.png" width={540} height={420}/>
     </section>
   )
 }

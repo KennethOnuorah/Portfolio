@@ -4,6 +4,7 @@
   position: fixed;
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   padding: 20px 90px 20px 90px;
   box-sizing: border-box;
   width: 100%;

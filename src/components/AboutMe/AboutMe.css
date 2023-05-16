@@ -1,0 +1,46 @@
+.aboutMe{
+  margin-top: 150px;
+}
+
+.aboutMe .title{
+  font-size: xxx-large;
+  font-weight: bold;
+}
+
+.aboutMe .aboutMeContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.aboutMe .aboutMeContainer .images{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aboutMe .aboutMeContainer .description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: x-large;
+  width: 500px;
+}
+
+.aboutMe .aboutMeContainer .description .paragraphs {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.paragraphs ul{
+  padding-left: 2rem;
+  line-height: 1.5em;
+}
+.paragraphs ul li::before{
+  content: "- ";
+}
+.paragraphs ul li{
+  list-style: none;
+}

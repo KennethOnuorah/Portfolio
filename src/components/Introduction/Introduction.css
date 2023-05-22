@@ -43,6 +43,9 @@
 }
 
 .introduction img{
+  height: auto;
+  width: 100%;
+  max-width: 540px;
   user-select: none;
   animation: levitate 4s infinite;
   transition: all 0.2s ease;
@@ -57,5 +60,21 @@
   }
   100%{
     transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1117px){
+  .introduction {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .introduction .innerContainer .greeting,
+  .introduction .innerContainer .description{
+    text-align: center;
+  }
+
+  .introduction .innerContainer .buttons{
+    justify-content: center;
   }
 }

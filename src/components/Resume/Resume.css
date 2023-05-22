@@ -1,12 +1,59 @@
 .resume {
   margin-top: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.resumeContainer .title{
+.resume .description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.resume .description .title{
   font-size: xxx-large;
   font-weight: bold;
 }
 
-.resumeContainer .title .subtitle{
+.resume .description .title .subtitle{
   font-size: x-large;
+}
+
+.viewResume {
+  display: flex;
+  gap: 0.25rem;
+  font-size: large;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  width: max-content;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.viewResume:hover{
+  border-radius: 15px;
+  transform: scale(1.1, 1.1);
+  box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.219);
+}
+
+@media screen and (max-width: 900px) {
+  .resume{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .resume .description,
+  .resume .description .title{
+    text-align: center;
+    align-items: center;
+  }
+  .viewResume {
+    text-align: center;
+  }
 }

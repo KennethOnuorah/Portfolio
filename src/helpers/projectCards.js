@@ -19,7 +19,7 @@ const cards = [
     name: "Errand manager app",
     description: "A React web application for creating and keeping track of errands and other tasks.",
     image: "/images/projects/reacterrands.png",
-    tags: ["React.js", "JavaScript", "CSS", "React Router", "Vite", "JSON Server"],
+    tags: ["React.js", "JavaScript", "CSS", "React Router", "Vite", "REST API"],
     view: "",
     github: "github.com/KennethOnuorah/React-Errands",
   },

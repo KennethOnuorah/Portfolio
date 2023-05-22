@@ -1,21 +1,24 @@
+import resume from "../../assets/Resume.pdf"
+
 import { AiOutlineFilePdf as PDF } from 'react-icons/ai'
 import "./Resume.css"
 
 const Resume = () => {
   return (
     <section className="resume">
-      <div className="resumeContainer">
+      <div className="description">
         <div className="title">
           Resume
           <div className="subtitle">
-            A resume of all of my work and coding experience
+            A resume of all of my work and experience
           </div>
         </div>
-        <button>
+        <a className='viewResume' role='button' href={resume} target='_blank'>
           <PDF size={23}/>
           View PDF
-        </button>
+        </a>
       </div>
+      <img src='/images/resume.png' width={323}/>
     </section>
   )
 }

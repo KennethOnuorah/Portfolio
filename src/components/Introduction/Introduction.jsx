@@ -5,7 +5,7 @@ const Introduction = () => {
     <section className='introduction'>
       <div className="innerContainer">
         <div className="greeting">
-          Hello There! 👋
+          Hello There!
           <br/>
           I'm Kenneth Onuorah
         </div>

@@ -11,12 +11,13 @@
   background-color: black;
   color: white;
   z-index: 1;
+  gap: 1rem;
 }
 
 .navBar .name{
   user-select: none;
   font-size: xx-large;
-  /* font-weight: 500; */
+  white-space: nowrap;
 }
 
 .navBar .links{
@@ -39,4 +40,16 @@
   border: none;
   font-size: large;
   color: white;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navBar .links button:hover{
+  color: gray;
+}
+
+
+@media screen and (max-width: 650px) {
+  .navBar {
+    padding: 20px;
+    align-items: center;
+  }
 }

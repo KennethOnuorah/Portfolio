@@ -8,10 +8,11 @@
 }
 
 .aboutMe .aboutMeContainer {
+  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .aboutMe .aboutMeContainer .images{
@@ -25,7 +26,6 @@
   flex-direction: column;
   gap: 2rem;
   font-size: x-large;
-  width: 500px;
 }
 
 .aboutMe .aboutMeContainer .description .paragraphs {
@@ -43,4 +43,24 @@
 }
 .paragraphs ul li{
   list-style: none;
+}
+
+@media screen and (max-width: 1120px) {
+  .aboutMe{
+    text-align: center;
+  }
+
+  .aboutMe .aboutMeContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .aboutMe .aboutMeContainer .description {
+    font-size: x-large;
+    justify-content: center;
+  }
+  
+  .aboutMe .aboutMeContainer .images{
+    display: none;
+  }
 }

@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types'
 import Tag from './Tag/Tag'
-import { AiOutlineEye as View , AiOutlineGithub as GitHub } from 'react-icons/ai'
+import { 
+  AiOutlineEye as View , 
+  AiOutlineGithub as GitHub 
+} from 'react-icons/ai'
 
 import "./Card.css"
 

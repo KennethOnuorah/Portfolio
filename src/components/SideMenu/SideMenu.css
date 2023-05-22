@@ -1,0 +1,49 @@
+.sideMenu{
+  top: 84px;
+  right: 0px;
+  height: 100vh;
+  padding: 20px;
+  z-index: 2;
+  position: fixed;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sideMenu .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sideMenu .links button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: x-large;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  background-color: transparent;
+  color: white;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sideMenu .links button:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+.sideMenu .links button div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sideMenu .links hr {
+  width: 100%;
+  border: 0.5px solid rgb(133, 133, 133);
+  border-radius: 50%;
+}

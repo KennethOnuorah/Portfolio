@@ -1,15 +1,17 @@
 import PropTypes from 'prop-types'
 import Tag from './Tag/Tag'
-import { 
-  AiOutlineEye as View , 
-  AiOutlineGithub as GitHub 
-} from 'react-icons/ai'
+import { AiOutlineEye as View , AiOutlineGithub as GitHub } from 'react-icons/ai'
 
 import "./Card.css"
 
-const Card = ({name, description, image, tags, view, github}) => {
+const Card = ({name, description, image, tags, view, github, animation}) => {
   return (
-    <article className='card'>
+    <article 
+      className='card'
+      style={{
+        animation: animation
+      }}
+    >
       <div className="projectTitle">
         {name}
       </div>
@@ -21,10 +23,12 @@ const Card = ({name, description, image, tags, view, github}) => {
         {tags.map((tag, index) => <Tag key={index} name={tag}/>)}
       </div>
       <div className="links">
-        <a className="view" role='button' href={`http://${view}`} target='_blank'>
-          <View size={23}/>
-          View Project
-        </a>
+        {view !== '' && 
+          <a className="view" role='button' href={`http://${view}`} target='_blank'>
+            <View size={23}/>
+            View Project
+          </a>
+        }
         <a className="repo" role='button' href={`http://${github}`} target='_blank'>
           <GitHub size={23}/>
           Visit Repo
@@ -40,7 +44,8 @@ Card.propTypes = {
   image: PropTypes.string.isRequired,
   tags: PropTypes.arrayOf(PropTypes.string.isRequired),
   view: PropTypes.string.isRequired,
-  github: PropTypes.string.isRequired
+  github: PropTypes.string.isRequired,
+  animation: PropTypes.string.isRequired
 }
 
 export default Card

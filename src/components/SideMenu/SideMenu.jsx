@@ -16,8 +16,9 @@ const SideMenu = () => {
     <aside 
       className="sideMenu"
       style={{
-        opacity: (isMenuOpen && dimensions.width < 1180) ? 1 : 0,
-        width: (isMenuOpen && dimensions.width < 1180) ? "200px" : "0px"
+        boxShadow: (isMenuOpen && dimensions.width < 1180) ? "-5px 0px 20px 4px rgba(0, 0, 0, 0.35)" : "0px 0px 0px 0px transparent",
+        padding: (isMenuOpen && dimensions.width < 1180) ? "20px" : "20px 0px",
+        width: (isMenuOpen && dimensions.width < 1180) ? "200px" : "0px",
       }}
     >
       <div className="links">

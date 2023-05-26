@@ -1,6 +1,6 @@
 .sideMenu{
   top: 84px;
-  right: 0px;
+  right: -1px;
   height: 100vh;
   padding: 20px;
   z-index: 2;

@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 .introduction .innerContainer{
   display: flex;
@@ -47,26 +47,17 @@
   width: 100%;
   max-width: 540px;
   user-select: none;
-  animation: levitate 4s infinite;
   transition: all 0.2s ease;
+  opacity: 0;
 }
-
-@keyframes levitate{
-  0%{
-    transform: translateY(0);
-  }
-  50%{
-    transform: translateY(-15px);
-  }
-  100%{
-    transform: translateY(0px);
-  }
+.introImage{
+  animation: leftwardShift 1s forwards 0.3s, levitate 4s infinite 1.3s;
 }
 
 @media screen and (max-width: 1117px){
   .introduction {
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
   }
 
   .introduction .innerContainer .greeting,

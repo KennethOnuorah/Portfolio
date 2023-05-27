@@ -20,7 +20,7 @@ const projectCards = [
     description: "A React web application for creating and keeping track of errands and other tasks.",
     image: "/images/projects/reacterrands.png",
     tags: ["React.js", "JavaScript", "CSS", "React Router", "Vite", "JSON Server"],
-    view: "-",
+    view: "",
     github: "github.com/KennethOnuorah/React-Errands",
   },
   {

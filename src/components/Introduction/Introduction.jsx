@@ -14,7 +14,7 @@ const Introduction = () => {
   }, [isElementVisible])
 
   return (
-    <section className='introduction'>
+    <section id='introduction'>
       <div className="innerContainer">
         <div className="greeting">
           Hello There!
@@ -24,13 +24,13 @@ const Introduction = () => {
         <div className="description">
           Front-end web developer & programmer
         </div>
-        <div className="buttons">
-          <button className="viewWork">
+        <div className="links">
+          <a className="viewWork" href="#projects">
             View Work
-          </button>
-          <button className="contactMe">
+          </a>
+          <a className="contactMe" href="#contacts">
             Contact Me
-          </button>
+          </a>
         </div>
       </div>
       <img 

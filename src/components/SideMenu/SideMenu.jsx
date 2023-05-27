@@ -1,4 +1,5 @@
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
+import { toggleMenuOpen } from '../../../redux/slices/sideMenu'
 import useViewportDimensions from '../../hooks/useViewportDimensions'
 
 import { AiOutlineHome as Home } from 'react-icons/ai'
@@ -10,6 +11,7 @@ import "./SideMenu.css"
 
 const SideMenu = () => {
   const isMenuOpen = useSelector(state => state.sideMenu.isOpen)
+  const dispatch = useDispatch()
   const dimensions = useViewportDimensions()
 
   return (
@@ -22,21 +24,33 @@ const SideMenu = () => {
       }}
     >
       <div className="links">
-        <button>
+        <a 
+          href='#introduction'
+          onClick={() => dispatch(toggleMenuOpen())}
+        >
           <Home size={25}/> Home
-        </button>
+        </a>
         <hr/>
-        <button>
+        <a 
+          href='#aboutMe'
+          onClick={() => dispatch(toggleMenuOpen())}
+        >
           <AboutMe size={25}/> About Me
-        </button>
+        </a>
         <hr/>
-        <button>
+        <a 
+          href='#projects'
+          onClick={() => dispatch(toggleMenuOpen())}
+        >
           <Projects size={25}/> Projects
-        </button>
+        </a>
         <hr/>
-        <button>
+        <a 
+          href='#resume'
+          onClick={() => dispatch(toggleMenuOpen())}
+        >
           <Resume size={25}/> Resume
-        </button>
+        </a>
       </div>
     </aside>
   )

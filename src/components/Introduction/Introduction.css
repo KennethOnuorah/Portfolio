@@ -1,30 +1,30 @@
-.introduction{
+#introduction{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 150px;
+  padding-top: 150px;
 }
-.introduction .innerContainer{
+#introduction .innerContainer{
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.introduction .innerContainer .greeting{
+#introduction .innerContainer .greeting{
   font-weight: bold;
   font-size: xxx-large;
   text-align: left;
 }
 
-.introduction .innerContainer .description{
+#introduction .innerContainer .description{
   font-size: x-large;
 }
-.introduction .innerContainer .buttons{
+#introduction .innerContainer .links{
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
-.introduction .innerContainer .buttons button{
+#introduction .innerContainer .links a{
   font-size: large;
   font-weight: 500;
   outline: none;
@@ -32,17 +32,18 @@
   border-radius: 5px;
   cursor: pointer;
   background-color: rgb(0, 0, 0);
+  text-decoration: none;
   color: white;
   padding: 1rem 2rem;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.introduction .innerContainer .buttons button:hover{
+#introduction .innerContainer .links a:hover{
   border-radius: 15px;
   transform: scale(1.1, 1.1);
   box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.219);
 }
 
-.introduction img{
+#introduction img{
   height: auto;
   width: 100%;
   max-width: 540px;
@@ -55,17 +56,17 @@
 }
 
 @media screen and (max-width: 1117px){
-  .introduction {
+  #introduction {
     flex-direction: column;
     gap: 3rem;
   }
 
-  .introduction .innerContainer .greeting,
-  .introduction .innerContainer .description{
+  #introduction .innerContainer .greeting,
+  #introduction .innerContainer .description{
     text-align: center;
   }
 
-  .introduction .innerContainer .buttons{
+  #introduction .innerContainer .links{
     justify-content: center;
   }
 }

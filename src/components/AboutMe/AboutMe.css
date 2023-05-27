@@ -1,14 +1,15 @@
-.aboutMe{
-  margin-top: 150px;
+#aboutMe{
+  margin-top: 100px;
   padding: 20px;
+  padding-top: 125px;
 }
 
-.aboutMe .title{
+#aboutMe .title{
   font-size: xxx-large;
   font-weight: bold;
 }
 
-.aboutMe .aboutMeContainer {
+#aboutMe .aboutMeContainer {
   padding: 20px;
   display: flex;
   flex-shrink: 1;
@@ -18,27 +19,27 @@
   align-items: center;
 }
 
-.aboutMe .aboutMeContainer .images{
+#aboutMe .aboutMeContainer .images{
   display: flex;
   flex-direction: column;
   flex-basis: 1;
   gap: 2rem;
 }
 
-.aboutMe .aboutMeContainer .images img{
+#aboutMe .aboutMeContainer .images img{
   height: auto;
   width: 100%;
   opacity: 0;
 }
 
-.aboutMe .aboutMeContainer .description {
+#aboutMe .aboutMeContainer .description {
   display: flex;
   flex-direction: column;
   gap: 2rem;
   font-size: x-large;
 }
 
-.aboutMe .aboutMeContainer .description .paragraphs {
+#aboutMe .aboutMeContainer .description .paragraphs {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -56,16 +57,16 @@
 }
 
 @media screen and (max-width: 1120px) {
-  .aboutMe{
+  #aboutMe{
     text-align: center;
   }
 
-  .aboutMe .aboutMeContainer {
+  #aboutMe .aboutMeContainer {
     flex-direction: column-reverse;
     justify-content: center;
   }
 
-  .aboutMe .aboutMeContainer .description {
+  #aboutMe .aboutMeContainer .description {
     font-size: x-large;
     justify-content: center;
   }

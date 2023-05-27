@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding: 20px 90px 20px 90px;
+  padding: 20px 90px;
   box-sizing: border-box;
   width: 100%;
   background-color: black;
@@ -26,9 +26,8 @@
   align-items: center;
   gap: 2.5rem;
 }
-.navBar .links:not(button){
-  user-select: none;
-}
+
+.navBar .links a,
 .navBar .links button{
   display: flex;
   flex-direction: row;
@@ -36,13 +35,14 @@
   gap: 1rem;
   cursor: pointer;
   background-color: transparent;
+  text-decoration: none;
   outline: none;
   border: none;
   font-size: large;
   color: white;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navBar .links button:hover{
+.navBar .links a:hover{
   color: gray;
 }
 

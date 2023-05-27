@@ -15,7 +15,7 @@ const Projects = () => {
   }, [inView])
 
   return (
-    <section className="projects" ref={containerRef}>
+    <section id="projects" ref={containerRef}>
       <div className="projectsContainer">
         <div className="title">
           Projects
@@ -24,18 +24,17 @@ const Projects = () => {
           </div>
         </div>
         <div className="projectCards">
-          {alreadyIntersected &&
-            projectCards.map((card, index) => (
-              <Card
-                key={index}
-                name={card.name}
-                description={card.description}
-                image={card.image}
-                tags={card.tags}
-                view={card.view}
-                github={card.github}
-                animation={`${index % 2 == 0 ? "rightward" : "leftward"}Shift 1s forwards ${0.5 * index}s`}
-              />
+          {projectCards.map((card, index) => (
+            <Card
+              key={index}
+              name={card.name}
+              description={card.description}
+              image={card.image}
+              tags={card.tags}
+              view={card.view}
+              github={card.github}
+              animation={alreadyIntersected ? `${index % 2 == 0 ? "rightward" : "leftward"}Shift 1s forwards ${0.5 * index}s` : ''}
+            />
           ))}
         </div>
       </div>

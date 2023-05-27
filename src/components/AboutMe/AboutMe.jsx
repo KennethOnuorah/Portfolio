@@ -14,7 +14,7 @@ const AboutMe = () => {
   }, [inView])
 
   return (
-    <section className="aboutMe">
+    <section id="aboutMe">
       <div className="aboutMeContainer"> 
         <div className="images" ref={imagesRef}>
           <img 

@@ -17,7 +17,7 @@ const Resume = () => {
   }, [inView])
 
   return (
-    <section className="resume" ref={resumeRef}>
+    <section id="resume" ref={resumeRef}>
       <div className="description">
         <div className="title">
           Resume

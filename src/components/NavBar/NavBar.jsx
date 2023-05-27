@@ -16,26 +16,27 @@ const NavBar = () => {
 
   const defaultLinks = (
     <>
-      <button>
+      <a href='#introduction'>
         <Home/>
         Home
-      </button> |
-      <button>
+      </a> |
+      <a href='#aboutMe'>
         <AboutMe/>
         About Me
-      </button> |
-      <button>
+      </a> |
+      <a href='#projects'>
         <Projects/>
         Projects
-      </button> |
-      <button>
+      </a> |
+      <a href='#resume'>
         <Resume/>
         Resume
-      </button>
+      </a>
     </>
   )
-  const sideMenuLinks = (
+  const sideMenuButton = (
     <button
+      className='sideMenuButton'
       onClick={() => dispatch(toggleMenuOpen())}
     >
       {isMenuOpen ? <CloseMenu size={25}/> : <OpenMenu size={25}/>}
@@ -48,7 +49,7 @@ const NavBar = () => {
         Kenneth Onuorah
       </div>
       <div className="links">
-        {dimensions.width >= 1180 ? defaultLinks : sideMenuLinks}
+        {dimensions.width >= 1180 ? defaultLinks : sideMenuButton}
       </div>
     </nav>
   )

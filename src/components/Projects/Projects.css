@@ -1,5 +1,6 @@
-.projects{
-  margin-top: 200px;
+#projects{
+  padding-top: 150px;
+  transition: all 0.2s ease-in-out;
 }
 
 .projectsContainer {

@@ -1,6 +1,6 @@
 .sideMenu{
   top: 84px;
-  right: 0px;
+  right: -1px;
   height: 100vh;
   padding: 20px;
   z-index: 2;
@@ -16,7 +16,7 @@
   gap: 1.5rem;
 }
 
-.sideMenu .links button {
+.sideMenu .links a {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -27,15 +27,16 @@
   outline: none;
   white-space: nowrap;
   background-color: transparent;
+  text-decoration: none;
   color: white;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.sideMenu .links button:hover {
+.sideMenu .links a:hover {
   cursor: pointer;
   color: gray;
 }
 
-.sideMenu .links button div {
+.sideMenu .links a div {
   display: flex;
   flex-direction: row;
   align-items: center;

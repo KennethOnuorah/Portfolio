@@ -1,4 +1,4 @@
-const cards = [
+const projectCards = [
   {
     name: "Music playlist app",
     description: "A React web application for uploading and listening to music.",
@@ -11,7 +11,7 @@ const cards = [
     name: "Weather-reporting app",
     description: "A React web application that reports weather and temperature forecasts based on a given location.",
     image: "/images/projects/reactweather.png",
-    tags: ["React.js", "JavaScript", "CSS", "Redux", "Axios", "React Router", "Vite"],
+    tags: ["React.js", "JavaScript", "CSS", "Redux", "Axios", "React Router", "API", "Vite"],
     view: "kenneth-o-react-weather.netlify.app/",
     github: "github.com/KennethOnuorah/React-Weather",
   },
@@ -19,8 +19,8 @@ const cards = [
     name: "Errand manager app",
     description: "A React web application for creating and keeping track of errands and other tasks.",
     image: "/images/projects/reacterrands.png",
-    tags: ["React.js", "JavaScript", "CSS", "React Router", "Vite", "REST API"],
-    view: "",
+    tags: ["React.js", "JavaScript", "CSS", "React Router", "Vite", "JSON Server"],
+    view: "-",
     github: "github.com/KennethOnuorah/React-Errands",
   },
   {
@@ -28,7 +28,7 @@ const cards = [
     description: "A modern-styled website for a fictional company built with React.",
     image: "/images/projects/webpage.png",
     tags: ["React.js", "JavaScript", "CSS", "Sass", "Vite"],
-    view: "kenneth-o-mock-webpage.netlify.app/",
+    view: "",
     github: "github.com/KennethOnuorah/Website",
   },
   {
@@ -49,4 +49,4 @@ const cards = [
   }
 ]
 
-export default cards
+export default projectCards

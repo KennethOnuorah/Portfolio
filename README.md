@@ -1,5 +1,6 @@
-# Portfolio
-Kenneth Onuorah
+<h1 align="center">Portfolio 💼</h1>
+<h4 align="center">Kenneth Onuorah</h3>
 
-### ***Note***: 
-* This portfolio is outdated and may be replaced in the future. 
+<p align="center">
+  <strong>Note</strong>: This portfolio is outdated. You can view my new portfolio <a href="https://kennethonuorah.vercel.app">here</a>.  
+</p>
